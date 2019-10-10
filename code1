@@ -1,0 +1,57 @@
+def student_list():
+    name =[]
+    while True:
+        aty = input(" stop bolsa toktat:\n ")
+        if aty=="stop":
+            break
+        else:
+            name.append(aty)
+    return name
+
+student=student_list()
+def student_ball():
+    ball=[]
+    for i in student:
+        ball1=int((input(" algan baly: {} \n".format(i))))
+        ball.append(ball1)
+    return ball
+z=student_ball()
+def joker():
+    tap=[]
+    # al = student_list()
+    # scores = student_ball(al)
+    avg=sum(z)/len(student)
+    print("Ortasha ball: {}".format(avg))
+    for i1 in range(len(student)):
+        if z[i1]<avg:
+            tap.append(student[i1])
+    print("Ortasha baldan tomen algan student(+ter): ")
+    return tap
+
+from meiir1 import student_list,student_ball,joker
+tg=joker()
+print(tg)
+
+
+#################################################################
+
+meir = {}
+name = []
+sum=0
+while True:
+    aty = input("atyndy engiz: \n")
+    if aty == "stop":
+        break
+    ball = int(input("ball engiz: \n"))
+    meir[aty]=ball
+print(meir)
+
+for i in range(len(meir)):
+    sum+=list(meir.items())[i][1]
+sum1=sum/len(meir)
+print(" Ortasha ball: {}".format(sum1))
+for i in range(len(meir)):
+    if list(meir.items())[i][1]<sum1:
+        name.append(list(meir.items())[i][0])
+print(" Ortashadan tomen ball algan student: {}".format(name))
+
