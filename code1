@@ -55,3 +55,164 @@ for i in range(len(meir)):
         name.append(list(meir.items())[i][0])
 print(" Ortashadan tomen ball algan student: {}".format(name))
 
+
+____________________________________________________________________
+
+Kalendar 
+
+while True:
+    jyl=int(input(" jyl: "))
+    if jyl<=int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+while True:
+    ay = int(input(" ay: "))
+    if ay>12 or ay<=int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+
+while True:
+    kun = int(input(" kun: "))
+    if ay==2 and jyl%4 == 0  :
+        if kun > int(29) or kun<=int(0):
+            print(" Kayta engiz ")
+        else:
+            break
+
+    elif ay == 2 and jyl%4!=0  :
+        if kun>28 or kun<=0:
+            print(" Kayta engiz ")
+        else:
+            break
+
+    elif ay == 4 or 6 or 9 or 11:
+        if kun>30 or kun<=int(0):
+            print(" Kayta engiz ")
+        else:
+            break
+
+
+    elif ay== 1 or 3 or 5 or 7 or 8 or 10 or 11:
+            if kun>31 or kun<=int(0):
+                print(" Kayta engiz ")
+            else:
+                break
+    else:
+        break
+
+while True:
+    sag=int(input(" sag: "))
+    if sag>=24 or sag<int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+while True:
+    min=int(input(" min: "))
+    if min>=60 or min<int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+while True:
+    sec=int(input(" sec: "))
+    if sec>=60 or sec<int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+print("\n{}.{}.{}.{}:{}:{}".format(jyl,ay,kun,sag,min,sec))#
+
+while True:
+    jyl2=int(input(" jyl: "))
+    if jyl2<=int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+while True:
+    ay2 = int(input(" ay: "))
+    if ay2>12 or ay2<=int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+
+while True:
+    kun2 = int(input(" kun: "))
+    if ay2==2 and jyl2%4 == 0  :
+        if kun2 > int(29) or kun2<=int(0):
+            print(" Kayta engiz ")
+        else:
+            break
+
+    elif ay2 == 2 and jyl2%4!=0  :
+        if kun2>28 or kun2<=0:
+            print(" Kayta engiz ")
+        else:
+            break
+
+    elif ay2 == 4 or 6 or 9 or 11:
+        if kun2>30 or kun2<=int(0):
+            print(" Kayta engiz ")
+        else:
+            break
+
+
+    elif ay2== 1 or 3 or 5 or 7 or 8 or 10 or 11:
+            if kun2>31 or kun2<=int(0):
+                print(" Kayta engiz ")
+            else:
+                break
+    else:
+        break
+
+while True:
+    sag2=int(input(" sag: "))
+    if sag2>=24 or sag2<int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+while True:
+    min2=int(input(" min: "))
+    if min2>=60 or min2<int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+while True:
+    sec2=int(input(" sec: "))
+    if sec2>=60 or sec2<int(0):
+        print(" Kayta engiz ")
+    else:
+        break
+print("\n{}.{}.{}.{}:{}:{}".format(jyl2,ay2,kun2,sag2,min2,sec2))
+
+m = min * 60
+s = sag * 3600
+k = kun * 86400
+a = ay * 2592000
+j = jyl * 31536000
+data1 = sec + m + s + k + a + j
+m2 = min2 * 60
+s2 = sag2 * 3600
+k2 = kun2 * 86400
+a2 = ay2 * 2592000
+j2 = jyl2 * 31536000
+data2 = sec2 + m2 + s2 + k2 + a2 + j2
+vr = data2 - data1
+print("\nZhyldagy sekundtar: {} ".format(vr))
+jyl3 = vr // 31536000
+kal = vr % 31536000
+ay3 = kal // 2592000
+kal1 = kal % 2592000
+kun3 = kal1 // 86400
+kal2 = kal1 % 86400
+sag3 = kal2 // 3600
+kal3 = kal2 % 3600
+min3 = kal3 // 60
+kal4 = kal3 % 60
+print("\n{}.{}.{}.{}:{}:{})".format(jyl3, ay3, kun3, sag3, min3, kal4))
+
+
+
+
+
+
+
