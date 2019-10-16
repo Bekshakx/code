@@ -58,132 +58,187 @@ print(" Ortashadan tomen ball algan student: {}".format(name))
 
 ____________________________________________________________________
 
-Kalendar 
+kalendar
+
 
 while True:
-    jyl=int(input(" jyl: "))
-    if jyl<=int(0):
+    jyl=float(input(" jyl: "))
+    if jyl<=float(0) or 0 < jyl < 1 :
         print(" Kayta engiz ")
+    elif type(jyl)==float :
+        print(" > jyl mani  :", int(float(jyl)))
+        break
     else:
         break
 while True:
-    ay = int(input(" ay: "))
-    if ay>12 or ay<=int(0):
+    ay = float(input(" ay: "))
+    if  ay>12 or 0 < ay < 1:
         print(" Kayta engiz ")
+    elif type(ay)==float:
+        print(" > ay mani :", int(float(ay)))
+        break
     else:
         break
 
 while True:
-    kun = int(input(" kun: "))
-    if ay==2 and jyl%4 == 0  :
-        if kun > int(29) or kun<=int(0):
+    kun = float(input(" kun: "))
+    if ay==2 and jyl%4 == 0 or 0 < ay < 1:
+        if kun > 29 or kun<=int(0) or 0 < kun < 1:
             print(" Kayta engiz ")
+        elif type(kun) == float:
+            print(" > kun mani :", int(float(kun)))
+            break
         else:
             break
 
-    elif ay == 2 and jyl%4!=0  :
-        if kun>28 or kun<=0:
+    elif ay == 2 and jyl%4!=0 or 0 < ay < 1:
+        if kun>28 or kun<=0 or 0 < kun < 1:
             print(" Kayta engiz ")
+        elif type(kun) == float:
+            print(" > kun mani :", int(float(kun)))
+            break
         else:
             break
 
-    elif ay == 4 or 6 or 9 or 11:
-        if kun>30 or kun<=int(0):
+    elif ay == 4 or 6 or 9 or 11 or 0 < ay < 1:
+        if kun>30 or kun<=int(0) or 0 < kun < 1:
             print(" Kayta engiz ")
+        elif type(kun) == float:
+            print(" > kun mani :", int(float(kun)))
+            break
         else:
             break
 
 
-    elif ay== 1 or 3 or 5 or 7 or 8 or 10 or 11:
-            if kun>31 or kun<=int(0):
+    elif ay== 1 or 3 or 5 or 7 or 8 or 10 or 12 or 0 < ay < 1:
+            if kun>31 or kun<=int(0) or 0 < kun < 1:
                 print(" Kayta engiz ")
+            elif type(kun) == float:
+                print(" > kun mani :", int(float(kun)))
+                break
             else:
                 break
     else:
         break
 
 while True:
-    sag=int(input(" sag: "))
-    if sag>=24 or sag<int(0):
+    sag=float(input(" sag: "))
+    if sag>=24 or sag<int(0) or 0 < sag < 1:
         print(" Kayta engiz ")
+    elif type(sag) == float:
+        print(" > sag mani :", int(float(sag)))
+        break
     else:
         break
 while True:
-    min=int(input(" min: "))
-    if min>=60 or min<int(0):
+    min=float(input(" min: "))
+    if min>=60 or min<int(0) or 0 < min < 1:
         print(" Kayta engiz ")
+    elif type(min) == float:
+        print(" > min mani :", int(float(min)))
+        break
     else:
         break
 while True:
-    sec=int(input(" sec: "))
-    if sec>=60 or sec<int(0):
+    sec=float(input(" sec: "))
+    if sec>=60 or sec<int(0) or 0 < sec < 1:
         print(" Kayta engiz ")
-    else:
+    elif type(sec) == float:
+        print(" > sec mani :", int(float(sec)))
         break
-print("\n{}.{}.{}.{}:{}:{}".format(jyl,ay,kun,sag,min,sec))#
-
-while True:
-    jyl2=int(input(" jyl: "))
-    if jyl2<=int(0):
-        print(" Kayta engiz ")
-    else:
-        break
-while True:
-    ay2 = int(input(" ay: "))
-    if ay2>12 or ay2<=int(0):
-        print(" Kayta engiz ")
     else:
         break
 
+print("\njyl: {}  ay: {}  kun: {}  sagat: {}  minut: {}  secund: {}".format(int(float(jyl)),int(float(ay)),int(float(kun)),int(float(sag)),int(float(min)),int(float(sec))))
+
 while True:
-    kun2 = int(input(" kun: "))
-    if ay2==2 and jyl2%4 == 0  :
-        if kun2 > int(29) or kun2<=int(0):
+    jyl2=float(input(" jyl: "))
+    if jyl2<=int(0) or 0 < jyl2 < 1:
+        print(" Kayta engiz ")
+    elif type(jyl2)==float:
+        print(" > jyl mani  :", int(float(jyl2)))
+        break
+    else:
+        break
+while True:
+    ay2 = float(input(" ay: "))
+    if  ay2>12 or ay2<int(0) or 0 < ay2 < 1:
+        print(" Kayta engiz ")
+    elif type(ay2)==float:
+        print(" > ay mani :", int(float(ay2)))
+        break
+    else:
+        break
+
+while True:
+    kun2 = float(input(" kun: "))
+    if ay2==2 and jyl2%4 == 0 or 0 < ay2 < 1 :
+        if kun2 > int(29) or kun2<=int(0) or 0 < kun2 < 1:
             print(" Kayta engiz ")
+        elif type(kun2) == float:
+            print(" > kun mani :", int(float(kun2)))
+            break
         else:
             break
 
-    elif ay2 == 2 and jyl2%4!=0  :
-        if kun2>28 or kun2<=0:
+    elif ay2 == 2 and jyl2%4!=0 or 0 < ay2 < 1:
+        if kun2>28 or kun2<=0 or 0 < kun2 < 1:
             print(" Kayta engiz ")
+        elif type(kun2) == float:
+            print(" > kun mani :", int(float(kun2)))
+            break
         else:
             break
 
-    elif ay2 == 4 or 6 or 9 or 11:
-        if kun2>30 or kun2<=int(0):
+    elif ay2 == 4 or 6 or 9 or 11 or 0 < ay2 < 1:
+        if kun2>30 or kun2<=int(0) or 0 < kun2 < 1:
             print(" Kayta engiz ")
+        elif type(kun2) == float:
+            print(" > kun mani :", int(float(kun2)))
+            break
         else:
             break
 
 
-    elif ay2== 1 or 3 or 5 or 7 or 8 or 10 or 11:
-            if kun2>31 or kun2<=int(0):
+    elif ay2 == 1 or 3 or 5 or 7 or 8 or 10 or 12 or 0 < ay2 < 1:
+            if kun2>31 or kun2<=int(0) or 0 < kun2 < 1:
                 print(" Kayta engiz ")
+            elif type(kun2) == float:
+                print(" > kun mani :", int(float(kun2)))
+                break
             else:
                 break
     else:
         break
 
 while True:
-    sag2=int(input(" sag: "))
-    if sag2>=24 or sag2<int(0):
+    sag2=float(input(" sag: "))
+    if sag2>=24 or sag2<int(0) or 0 < sag2 < 1:
         print(" Kayta engiz ")
+    elif type(sag2) == float:
+        print(" > sag mani :", int(float(sag2)))
+        break
     else:
         break
 while True:
-    min2=int(input(" min: "))
-    if min2>=60 or min2<int(0):
+    min2=float(input(" min: "))
+    if min2>=60 or min2<int(0) or 0 < min2 < 1:
         print(" Kayta engiz ")
+    elif type(min2) == float:
+        print(" > min mani :", int(float(min2)))
+        break
     else:
         break
 while True:
-    sec2=int(input(" sec: "))
-    if sec2>=60 or sec2<int(0):
+    sec2=float(input(" sec: "))
+    if sec2>=60 or sec2<int(0) or 0 < sec2 < 1:
         print(" Kayta engiz ")
+    elif type(sec2) == float:
+        print(" > sec mani :", int(float(sec2)))
+        break
     else:
         break
-print("\n{}.{}.{}.{}:{}:{}".format(jyl2,ay2,kun2,sag2,min2,sec2))
-
+print("\njyl: {} ay: {} kun: {} sagat: {} minut: {} secund: {}".format(int(float(jyl2)),int(float(ay2)),int(float(kun2)),int(float(sag2)),int(float(min2)),int(float(sec))))
 m = min * 60
 s = sag * 3600
 k = kun * 86400
@@ -208,7 +263,8 @@ sag3 = kal2 // 3600
 kal3 = kal2 % 3600
 min3 = kal3 // 60
 kal4 = kal3 % 60
-print("\n{}.{}.{}.{}:{}:{})".format(jyl3, ay3, kun3, sag3, min3, kal4))
+print("\n Sony ---> jyl: {} ay: {} kun: {} sagat: {} minut: {} secund: {}".format(int(float(jyl3)),int(float(ay3)),int(float(kun3)),int(float(sag3)),int(float(min3)),int(float(kal4))))
+
 
 
 
